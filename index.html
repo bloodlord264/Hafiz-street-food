@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hafiz Street Food</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Hafiz Street Food</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+
+<h2>Best Street Food in Sambrayal</h2>
+<p>Fresh Shawarma • Burgers • Fries • Chicken</p>
+
+<!-- FIXED SLIDER -->
+<div class="slider">
+  <img src="https://i.imgur.com/7yUvePI.png" class="slide active">
+  <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=60" class="slide">
+  <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=60" class="slide">
+</div>
+
+<a class="order-btn"
+href="https://wa.me/923354224865?text=Hello%20Hafiz%20Street%20Food%20I%20want%20to%20order"
+target="_blank">
+Order on WhatsApp
+</a>
+
+</section>
+
+<section id="menu" class="menu">
+
+<h2>Our Menu</h2>
+
+<div class="menu-grid">
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=60">
+<h3>Chicken Shawarma</h3>
+<p>170  PKR</p>
+</div>
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=60">
+<h3>Zinger Shawarma</h3>
+<p>  350 PKR</p>
+</div>
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=60">
+<h3>Round Burger</h3>
+<p>170  PKR</p>
+</div>
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=800&q=60">
+<h3>Long Burger</h3>
+<p>170 – 220 PKR</p>
+</div>
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=60">
+<h3>Zinger Burger</h3>
+<p> 400 PKR</p>
+</div>
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=800&q=60">
+<h3>Fries</h3>
+<p>100 – 300 PKR</p>
+</div>
+
+
+</div>
+
+</section>
+
+<section id="order" class="order">
+
+<h2>Place Order</h2>
+
+<form onsubmit="sendOrder(event)">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="text" id="phone" placeholder="Phone Number" required>
+<textarea id="address" placeholder="Delivery Address" required></textarea>
+<textarea id="orderText" placeholder="Your Order" required></textarea>
+<button type="submit">Send Order</button>
+</form>
+
+</section>
+
+<!-- FIXED FOOTER WITH CLICKABLE WHATSAPP -->
+<footer id="contact">
+  <p>Open Daily: 3 PM – 1 AM</p>
+  WhatsApp
+  <a href="https://wa.me/923354224865?text=Hello%20Hafiz%20Street%20Food%20I%20want%20to%20order" 
+target="_blank" 
+style="color:#ffd000; text-decoration:none;">
+  033542422465
+</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
